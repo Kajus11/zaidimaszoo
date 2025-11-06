@@ -1,38 +1,49 @@
 [
-    {
-        "image": "../assets/chili.png",
-        "name": "chili"
-    },
-    {
-        "image": "../assets/grapes.png",
-        "name": "grapes"
-    },
-    {
-        "image": "../assets/lemon.png",
-        "name": "lemon"
-    },
-    {
-        "image": "../assets/orange.png",
-        "name": "orange"
-    },
-    {
-        "image": "../assets/pineapple.png",
-        "name": "pineapple"
-    },
-    {
-        "image": "../assets/strawberry.png",
-        "name": "strawberry"
-    },
-    {
-        "image": "../assets/tomato.png",
-        "name": "tomato"
-    },
-    {
-        "image": "../assets/watermelon.png",
-        "name": "watermelon"
-    },
-    {
-        "image": "../assets/cherries.png",
-        "name": "cherries"
-    }
+  { "image": "../assets/animals/_ bee as animal 2920cadc-3cbc-41b7-8b64-c42168e9251d.png", "name": "bitė" },
+  { "image": "../assets/animals/_ black frog wi b24ac06a-4429-49e6-b2f0-50a97ee75dca.png", "name": "juodoji varlė" },
+  { "image": "../assets/animals/_ Cavy paveiksl 360a1587-c5ba-40a7-9978-553b125e95da.png", "name": "jūrų kiaulytė" },
+  { "image": "../assets/animals/_ Galago  pavei 1b1fdbb9-c26e-417e-af8c-660d1e58a33c.png", "name": "galago" },
+  { "image": "../assets/animals/_ snake white r c7d7d93f-5e4b-44b7-bf2b-2967fa1ec768.png", "name": "baltoji gyvatė" },
+  { "image": "../assets/animals/_ The tiny monk c7758003-4b41-4b90-97e5-ee2e12fc3c55.png", "name": "mažasis vienuolis" },
+  { "image": "../assets/animals/_ Turkey male p 2378d42a-893d-4245-be4e-604c45ba5d1a.png", "name": "kalkunas (patinas)" },
+  { "image": "../assets/animals/_ Turkey paveik f0bf32ae-9d23-4ec8-b0e9-4d59d8763e80.png", "name": "kalkunas" },
+  { "image": "../assets/animals/_Agama driežo p acc4e8a7-0791-4abe-a361-7e4448eeb527.png", "name": "driežas" },
+  { "image": "../assets/animals/_Armadillo pave 344f5102-bdb1-4ab7-9534-00302c4b8e25.png", "name": "šarvuotis" },
+  { "image": "../assets/animals/_black Bat pave fa9f4efc-4c68-44d3-9297-38f716075872.png", "name": "juodasis šikšnosparnis" },
+  { "image": "../assets/animals/_cat paveiksliu c763e03d-426b-4d38-a493-9181da8d2630.png", "name": "katė" },
+  { "image": "../assets/animals/_chameleon pave 6dd76cde-93c8-40a6-ac15-ae30d4a41a59.png", "name": "kameleonas" },
+  { "image": "../assets/animals/_chicken, pavei c7fbbceb-3dfe-4ab5-bf56-b0bd4246dd6f.png", "name": "višta" },
+  { "image": "../assets/animals/_Chinese turtle a54cd13d-8034-426f-8852-08d79a6fa2ad.png", "name": "kiniškas vėžlys" },
+  { "image": "../assets/animals/_cockroach inse e272ea43-da5f-4c9a-9274-46a0be824a60.png", "name": "tarakonas" },
+  { "image": "../assets/animals/_flying squirre e55d9f89-1df7-49c4-94fb-fede34d74311.png", "name": "skraidanti voverė" },
+  { "image": "../assets/animals/_goat paveiksli 45520283-f2c8-4315-a5d0-ada39318c558.png", "name": "ožka" },
+  { "image": "../assets/animals/_guinea fowl pa a81441de-9807-4e3e-b3ba-f51ee485db86.png", "name": "perlinė višta" },
+  { "image": "../assets/animals/_lemur paveiksl 8c7b5f6a-5d59-4d16-bfb6-9ad515725214.png", "name": "lemūras" },
+  { "image": "../assets/animals/_Lion tamarin p b5e8ad77-567f-4478-828c-8cf62325f955.png", "name": "liūto tamarinas" },
+  { "image": "../assets/animals/_otter paveiksl 2d12054f-b51b-4fa7-9b70-62ff19f3bd5f.png", "name": "ūdra" },
+  { "image": "../assets/animals/_parrot paveiks 2ce592ed-bbf2-4028-91a3-0c37827dafd7.png", "name": "papūga" },
+  { "image": "../assets/animals/_parrot paveiks 454a0548-1112-4d74-bd5a-6c214188fc8e.png", "name": "papūga" },
+  { "image": "../assets/animals/_parrot paveiks acbc7299-fa54-45dc-a8c4-532cf543be0b.png", "name": "papūga" },
+  { "image": "../assets/animals/_partridge pave 8f98bd4c-b308-4889-91de-90e79f88d257.png", "name": "kurapka" },
+  { "image": "../assets/animals/_Piton snake pa e076ef1f-9ab6-4808-8546-8c967348e6af.png", "name": "pitonas" },
+  { "image": "../assets/animals/_Piton snake pa ed38de0b-8cd8-424e-ac5b-8e9ec7ec47e2.png", "name": "pitonas" },
+  { "image": "../assets/animals/_Rabbit paveiks 3c0c3d01-1d3e-4baa-9b16-907a74544e4e.png", "name": "triušis" },
+  { "image": "../assets/animals/_rat, paveiksli 9dcc20f3-f2a8-4250-91b8-539a78a8671c.png", "name": "žiurkė" },
+  { "image": "../assets/animals/_Saguinus midas 74279cef-594f-4eea-83a6-222968f03613.png", "name": "auksinis tamarinas" },
+  { "image": "../assets/animals/_Saguinus midas f4139364-81a4-4ba3-9eb0-2ef6e5994bef.png", "name": "auksinis tamarinas" },
+  { "image": "../assets/animals/_salamander bla f306d73b-32be-4723-bc84-c58aa7139149.png", "name": "salamandra" },
+  { "image": "../assets/animals/_sand mouse  pa c4041476-696f-4dfd-95e0-52d7542df56a.png", "name": "smėlinė pelė" },
+  { "image": "../assets/animals/_sheep paveiksl 6face1b4-c83c-44b8-b2fd-c6603d36abf5.png", "name": "avis" },
+  { "image": "../assets/animals/_skunk paveiksl 32ea8e70-52a0-4d88-966e-89fe70d955d2.png", "name": "skunkas" },
+  { "image": "../assets/animals/_spider, paveik 037260ce-8244-4b10-ba54-ee92d476b000.png", "name": "voras" },
+  { "image": "../assets/animals/_spider, paveik 0abd7c12-6670-41d5-9b94-17cd3a117512.png", "name": "voras" },
+  { "image": "../assets/animals/_Stingray kaip  ce00a697-e321-442e-a567-eb6c4922d4ec.png", "name": "raja" },
+  { "image": "../assets/animals/_stingray pavei 40b29203-1851-420a-a862-b58d1a1cacb1.png", "name": "raja" },
+  { "image": "../assets/animals/_sturgeon kaip  407bb7c3-5a3e-413f-be32-b316f5984dc5.png", "name": "eršketas" },
+  { "image": "../assets/animals/_suricata pavei bf1946d2-bf98-4017-abd3-0bf55a801d86.png", "name": "surikata" },
+  { "image": "../assets/animals/_tamarin black  a84d23f6-1513-4c0b-9077-3d2ba3638c92.png", "name": "juodasis tamarinas" },
+  { "image": "../assets/animals/_tamarin paveik 1ce9cd8e-a292-40b1-a472-bec922426ad1.png", "name": "tamarinas" },
+  { "image": "../assets/animals/_toucan paveiks a58e8a8b-12ba-471f-8249-6cb9e3348c40.png", "name": "tukanas" },
+  { "image": "../assets/animals/_Turtle, paveik 32ad46d6-36f5-4ef5-a5be-50393000bff8.png", "name": "vėžlys" },
+  { "image": "../assets/animals/_white Bat pave 23418889-06ce-45f7-b610-6041712395f4.png", "name": "baltasis šikšnosparnis" }
 ]
