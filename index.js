@@ -26,7 +26,9 @@ if (document.readyState === 'loading') {
 function showLoadingThenStart() {
   const loading = document.getElementById('loading-screen');
   const start = document.getElementById('start-screen');
-  const levelCount = totalLevels || 3;
+  // preload the habitat backgrounds from assets/levels/
+  const bgList = ['land', 'water', 'air'];
+  const preloadCount = bgList.length;
   let done = 0;
   let finished = false;
   const minMs = 3000; // Krovimo lango laikas ms
@@ -62,14 +64,15 @@ function showLoadingThenStart() {
   };
 
   
-  for (let i = 1; i <= levelCount; i++) {
+  // preload the habitat images (land/water/air/other)
+  bgList.forEach((name) => {
     const img = new Image();
     img.onload = img.onerror = () => {
       done++;
-      if (done === levelCount) tryFinish();
+      if (done === preloadCount) tryFinish();
     };
-    img.src = `assets/levels/level-${i}.png`;
-  }
+    img.src = `assets/levels/${name}.png`;
+  });
 
   
   fallbackTimer = setTimeout(() => {
@@ -102,8 +105,8 @@ function loadLevel(level) {
         // Level 2 = all water animals
         levelCards = groups.water;
       } else {
-        // Level 3 = animals from air + other (fallback)
-        levelCards = groups.air.concat(groups.other);
+          // Level 3 = animals from air
+          levelCards = groups.air;
       }
 
       // If any group is empty (not enough unique cards), fall back to taking
@@ -123,7 +126,7 @@ function loadLevel(level) {
 // Group unique cards by habitat into { land, water, air, other }
 function groupUniqueByHabitat(data) {
   const seen = new Set();
-  const groups = { land: [], water: [], air: [], other: [] };
+  const groups = { land: [], water: [], air: [] };
   for (const item of data) {
     const name = (item.name || '').toString();
     if (seen.has(name)) continue;
@@ -132,7 +135,7 @@ function groupUniqueByHabitat(data) {
     if (h === 'land') groups.land.push(item);
     else if (h === 'water') groups.water.push(item);
     else if (h === 'air') groups.air.push(item);
-    else groups.other.push(item);
+    else groups.land.push(item); // fallback to land for unexpected
   }
   return groups;
 }
@@ -186,8 +189,8 @@ function detectHabitatForAnimal(name) {
   for (const kw of waterKeywords) if (nameNorm.includes(kw)) return 'water';
   for (const kw of landKeywords) if (nameNorm.includes(kw)) return 'land';
 
-  // fallback to 'other' if no keywords matched
-  return 'other';
+  // fallback to 'land' if no keywords matched
+  return 'land';
 }
 
 function applyBackgroundForLevel(levelCards) {
@@ -198,7 +201,7 @@ function applyBackgroundForLevel(levelCards) {
     counts[h] = (counts[h] || 0) + 1;
   });
 
-  let chosen = 'other';
+    let chosen = 'land';
   let max = 0;
   for (const h in counts) {
     if (counts[h] > max) {
@@ -206,8 +209,8 @@ function applyBackgroundForLevel(levelCards) {
       chosen = h;
     }
   }
-  // Apply background image (non-blocking). Expected asset names:
-  // assets/levels/land.png, assets/levels/water.png, assets/levels/other.png
+    // Apply background image (non-blocking). Expected asset names:
+    // assets/levels/land.png, assets/levels/water.png, assets/levels/air.png
   const bgPath = `assets/levels/${chosen}.png`;
   gameScreen.style.backgroundImage = `url("${bgPath}")`;
   gameScreen.style.backgroundSize = 'cover';
