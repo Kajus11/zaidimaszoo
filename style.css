@@ -19,7 +19,7 @@ body {
 div#start-screen {
     max-width: 100%;
     height: 100vh;
-    background: url(./assets/Green\ and\ Blue\ Minimalist\ Forest\ Desktop\ Wallpaper.png);
+    background: url(./assets/Green\ and\ Blue\ Minimalist\ Forest\ Desktop\ Wallpaper\ \(5\).png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,9 +43,42 @@ h2 {
 }
 
 #start-btn {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-right: 32px;
     background-color: unset;
+    cursor: pointer;
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    70% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateY(-15%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    95% {
+        transform: translateY(-7%);
+    }
+    97% {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#start-btn img {
+    width: 350px;
 }
 
 button {
