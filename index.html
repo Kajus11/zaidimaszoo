@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Atminties žaidimas</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <title>Atminties žaidimas</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- Pradžios langas -->
-  <div id="start-screen" class="screen active">
-    <h1>🧠 Atminties žaidimas</h1>
-    <p>Surask poras ir pereik visus lygius!</p>
-    <button id="start-btn">Pradėti žaidimą</button>
-  </div>
-
-  <!-- Žaidimo langas -->
-  <div id="game-screen" class="screen">
-    <h1>Memory Cards</h1>
-    <h2 id="level-title">1 lygis</h2>
-    <div class="grid-container"></div>
-    <p>Taškai: <span class="score">0</span></p>
-
-    <div class="actions">
-      <button onclick="restart()">🔄 Perkrauti</button>
-      <button class="skip" onclick="skipToEnd()">⏩ Į pabaigą</button>
+    <!-- Pradžios langas -->
+    <div id="start-screen" class="screen active">;
+        <!-- <h1>🧠 Atminties žaidimas</h1>;
+    <p>Surask poras ir pereik visus lygius!</p>;  -->
+        <button id="start-btn">Pradėti žaidimą</button>
     </div>
-  </div>
 
-  <!-- Pabaigos langas -->
-  <div id="end-screen" class="screen">
-    <h1>🎉 Sveikiname!</h1>
-    <p>Galutinis rezultatas: <span id="final-score"></span></p>
-    <button id="restart-btn">Žaisti iš naujo</button>
-  </div>
+    <!-- Žaidimo langas -->
+    <div id="game-screen" class="screen">
+        <h1>Memory Cards</h1>
+        <h2 id="level-title">1 lygis</h2>
+        <div class="grid-container"></div>
+        <p>Taškai: <span class="score">0</span></p>
 
-  <script src="index.js"></script>
+        <div class="actions">
+            <button onclick="restart()">🔄 Perkrauti</button>
+            <button class="skip" onclick="skipToEnd()">⏩ Į pabaigą</button>
+        </div>
+    </div>
+
+    <!-- Pabaigos langas -->
+    <div id="end-screen" class="screen">
+        <h1>🎉 Sveikiname!</h1>
+        <p>Galutinis rezultatas: <span id="final-score"></span></p>
+        <button id="restart-btn">Žaisti iš naujo</button>
+    </div>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
